@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body  {
+    background: hsl(0, 0%, 95%); 
+}
+
+
+.ah {
+text-decoration: none;
+padding: 2em;
+font-family: 'big shoulder display', cursive;
+}
+
+
+.container {
+    margin: auto;
+    width: 60vw;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+   padding: 2em;
+   height: 350px;
+   flex-basis: 200px;
+   flex-grow: 2;
+   flex-shrink: 1;
+   border-radius: 10px 0 0 10px;
+ 
+}
+
+.sedan h2 {
+    font-family: 'Big shoulders Display', cursive;
+    color:hsl(0, 0%, 95%);
+    padding-block: 1em;
+}
+
+.sedan p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    padding-bottom: 4.5em;
+}
+
+.sedan button {
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+    padding-inline: 2em;
+    padding-block: 1em;
+    border-radius: 25px;
+    border: none;
+}
+
+.sedan button:hover {
+    color: hsl(31, 86%, 36%);
+    background-color: hsla(0, 0%, 100%, 0.75);
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+    padding: 2em;
+    height: 350px; 
+    flex-basis: 200px;
+    flex-grow: 2;
+    flex-shrink: 1;
+ 
+}
+
+.suv h2 {
+    font-family: 'Big shoulders Display', cursive;
+    color:hsl(0, 0%, 95%);  
+    padding-block: 1em;
+}
+
+.suv p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    padding-bottom: 4.5em;
+}
+
+.suv button {
+    color:hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+    padding-inline: 2em;
+    padding-block: 1em;
+    border-radius: 25px;
+    border: none;
+}
+
+.suv button:hover {
+ background-color: hsla(0, 0%, 100%, 0.75);
+ color: hsl(184, 86%, 14%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 2em;
+    height: 350px;
+    flex-basis: 200px;
+    flex-grow: 2;
+    flex-shrink: 1;
+    border-radius: 0px 10px 10px 0;
+}
+
+.luxury h2 {
+    font-family: 'Big shoulders Display', cursive;
+    color:hsl(0, 0%, 95%);
+    padding-block: 1em;  
+}
+
+.luxury p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    padding-bottom: 4.5em;
+}
+
+.luxury button {
+    color:hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+    padding-inline: 2em;
+    padding-block: 1em;
+    border-radius: 25px;
+    border: none;
+
+}
+
+.luxury button:hover {
+background-color: hsla(0, 0%, 100%, 0.75);
+color: hsl(178, 46%, 11%);
+}
+
+
+/* i am using orientation: portrait for the mobile view that is 375px. please put this to consideration */
+
+@media screen and (orientation: portrait) {
+    
+    .container {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+    }
+}
